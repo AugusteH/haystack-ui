@@ -1,12 +1,12 @@
-(function () {
-'use strict';
+(function() {
+    'use strict';
 
 
-angular.module('hs.common', [ ])
+    angular.module('hs.common', [])
 
-    .constant( 'endpoints', {
-       
-        products: 'localhost:3000/products.json'
+    .constant('endpoints', {
+
+        products: 'https://shophaystack.herokuapp.com/products.json'
 
 
 
