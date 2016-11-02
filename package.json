@@ -1,0 +1,60 @@
+{
+    "name": "Haystack-ui",
+    "private": true,
+    "version": "0.0.0",
+    "description": "The user interface for Haystack",
+    "repository": "https://github.com/AugusteH/Haystack",
+    "license": "MIT",
+    "dependencies": {
+        "assert": "^1.3.0",
+        "body-parser": "^1.15.1",
+        "compression": "^1.6.1",
+        "cors": "^2.7.1",
+        "express": "^4.13.4",
+        "morgan": "^1.7.0",
+        "path": "^0.12.7",
+        "request": "^2.74.0",
+        "wiredep": "^4.0.0",
+        "bower": "^1.3.1",
+        "gulp": "^3.9.1",
+        "gulp-angular-protractor": "^0.1.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-clean": "^0.3.2",
+        "gulp-concat": "^2.6.0",
+        "gulp-inject": "^4.1.0",
+        "gulp-jshint": "^2.0.1",
+        "gulp-jshint-file-reporter": "0.0.2",
+        "gulp-less": "^3.1.0",
+        "gulp-load-plugins": "^1.2.4",
+        "gulp-notify": "^2.2.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-util": "^3.0.7",
+        "jasmine": "^2.4.1",
+        "jshint": "^2.9.2",
+        "karma": "^1.1.1",
+        "karma-chrome-launcher": "^1.0.1",
+        "karma-jasmine": "^1.0.2",
+        "karma-phantomjs-launcher": "^1.0.1",
+        "main-bower-files": "^2.13.1",
+        "run-sequence": "^1.2.2",
+        "shelljs": "^0.7.2"
+    },
+    "scripts": {
+        "test": "karma start karma.conf.js",
+        "postinstall": "bower install && gulp run-dev && npm prune",
+        "prestart": "npm install",
+        "start": "node server.js",
+        "build": "npm install && bower install && gulp clean && npm prune && gulp build.prod"
+    },
+    "engines": {
+        "node": "^5.10.1",
+        "npm": "^3.8.1"
+    },
+    "os": [
+        "win32",
+        "linux"
+    ],
+    "cpu": [
+        "x64"
+    ]
+}
