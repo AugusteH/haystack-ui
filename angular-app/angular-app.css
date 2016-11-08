@@ -1,3 +1,4 @@
-md-sidenav,md-sidenav.md-locked-open,md-sidenav.md-closed.md-locked-open-add-active{min-width:200px !important;width:85vw !important;max-width:400px !important}
+
+.md-nav-bar .md-nav-bar{background:#db5d20 !important}.md-nav-bar{border-style:none;border-width:0;height:48px;position:relative}.md-nav-bar.md-default-theme .md-button._md-nav-button.md-unselected,.md-nav-bar .md-button._md-nav-button.md-unselected{color:white}.md-button.md-default-theme.md-accent,.md-button.md-accent{color:white !important}md-content.md-default-theme,md-content{color:white !important;background-color:transparent !important}md-input-container:not(.md-input-invalid).md-input-focused .md-input{border-color:white}.md-input{color:white}
 
 
