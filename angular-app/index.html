@@ -16,10 +16,9 @@
     <!-- endbower -->
 
     <!-- import open sans font here for now, couldn't figure out less import -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <!-- app.css is processed from all the less files in the project use grunt less or grunt watch to pre-process the less-->
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="angular-app.css">
 
     <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon" />
 
@@ -292,19 +291,37 @@
     <title>Haystack</title>
 </head>
 
-<body layout="row" ng-cloak>
-    <md-sidenav layout="column" class="sidenav1 md-sidenav" md-is-locked-open="true">
-        <ul>
-            <li><a ng-href="/products">Products</a></li>
-            <li><a ng-href="/manufacturer">Manufacturer</a></li>
-            <li><a ng-href="/retailer">Retailer</a></li>
-        </ul>
-    </md-sidenav>
-    <md-content flex layout="column">
-        <div ui-view>
-            <h1>content area</h1>
-        </div>
-    </md-content>
+<body ng-controller="rootController" layout="column" ng-cloak>
+    <md-nav-bar md-colors="{background: 'primary-400'}" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+        <md-nav-item md-colors="{color: 'primary-50'}" class="md-headline md-accent" md-nav-href="/" name="haystack">HAYSTACK</md-nav-item>
+        <md-nav-item md-colors="{color: 'primary-50'}" md-nav-href="/manufacturer" name="manufacturer">Companies</md-nav-item>
+        <md-nav-item md-colors="{color: 'primary-50'}" md-nav-href="/products" name="products">Brands</md-nav-item>
+        <md-nav-item md-colors="{color: 'primary-50'}" md-nav-href="/login" name="page3">Login</md-nav-item>
+        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+      <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+      <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+      -->
+    </md-nav-bar>
+
+    <!--<md-sidenav class="md-sidenav-left md-whiteframe-z2 column" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Haystack</h1>
+        </md-toolbar>
+
+        <md-content layout-padding="">
+            <ul>
+                <li><a ng-href="/products">Products</a></li>
+                <li><a ng-href="/manufacturer">Manufacturer</a></li>
+                <li><a ng-href="/retailer">Retailer</a></li>
+            </ul>
+        </md-content>
+
+    </md-sidenav>-->
+
+    <div ui-view>
+    </div>
+
 </body>
 
 </html>

@@ -6,7 +6,8 @@
 
     .constant('endpoints', {
 
-        products: 'https://shophaystack.herokuapp.com/products.json'
+        products: 'https://shophaystack.herokuapp.com/products',
+        login: 'path/to/user'
 
 
 

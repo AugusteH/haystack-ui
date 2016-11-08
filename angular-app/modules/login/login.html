@@ -1,25 +1,59 @@
-<div class="container-fluid">
-    <h1>Welcome to Haystack!</h1>
-    <form>
-        <div class="control-group">
-            <label class="control-label" for="inputEmail">Email</label>
-            <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
-            </div>
+<div md-colors="{backgroundColor: 'primary-400'}">
+
+    <div layout="row" layout-sm="row" layout-xs="column" layout-padding>
+        <h1 style="padding:4%;margin: 0;" md-colors="{color: 'primary-50'}" flex="40" class="md-headline">B2B ECOMMERCE SOLUTION FOR SPECIALTY, ORGANIC AND NATURAL FOOD WHOLESALE</h1>
+
+        <div style="background: rgba(0,0,0,.1)" flex="35">
+            <form style="padding:2em">
+                <h2 style="margin-top:0;" md-colors="{color: 'primary-50'}">Sign in </h2>
+                <md-content layout="column " layout-padding=" ">
+                    <div>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label md-colors="{color: 'primary-50'}">Email</label>
+                            <input ng-required="true " type="email ">
+                        </md-input-container>
+
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label md-colors="{color: 'primary-50'}">Password</label>
+                            <input ng-required="true ">
+                        </md-input-container>
+                    </div>
+                </md-content>
+            </form>
         </div>
-        <div class="control-group">
-            <label class="control-label" for="inputPassword">Password</label>
-            <div class="controls">
-                <input type="password" id="inputPassword" placeholder="Password">
-            </div>
-        </div>
-        <div class="control-group">
-            <div class="controls">
-                <label style="margin-left:1%;" class="checkbox">
-        <input  type="checkbox"> Remember me
-      </label>
-                <button type="submit" class="btn">Sign in</button>
-            </div>
-        </div>
-    </form>
+
+
+        <!--<div flex="50 ">
+            <form>
+                <h2 md-colors="{color: 'primary-50'}">Register</h2>
+                <md-content layout="column " layout-padding=" ">
+                    <div>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label>Company Name</label>
+                            <input ng-required="true ">
+                        </md-input-container>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label>Name</label>
+                            <input ng-required="true ">
+                        </md-input-container>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label>Email</label>
+                            <input ng-required="true " type="email ">
+                        </md-input-container>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label>Password</label>
+                            <input ng-required="true ">
+                        </md-input-container>
+                        <md-input-container class="md-block " flex-gt-xs=" ">
+                            <label>Confrim Password</label>
+                            <input ng-required="true ">
+                        </md-input-container>
+                    </div>
+                </md-content>
+                <!--<div class="control-group ">
+                    <button type="submit " class="btn ">Register</button>
+                </div>
+        </form>
+    </div>-->
+    </div>
 </div>
